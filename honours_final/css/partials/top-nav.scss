@@ -1,0 +1,210 @@
+/*	 Top Navigation
+/* -------------------------------------------------------------------------------- */
+
+.fleft {
+    float: left;
+}
+
+.fright {
+    float: right;
+}
+
+.navbar {
+    z-index: 10001;
+    padding-left: 60px;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+ -webkit-box-shadow: 0px 26px 13px 0px rgba(50, 50, 50, 0.04);
+-moz-box-shadow:    0px 26px 13px 0px rgba(50, 50, 50, 0.04);
+box-shadow:         0px 26px 13px 0px rgba(50, 50, 50, 0.04); 
+}
+
+.navbar > .container, .navbar > .container-fluid {
+    z-index: 10001;
+}
+
+.navbar > .container .navbar-brand .fa-angle-right, .navbar > .container-fluid .navbar-brand .fa-angle-right {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.navbar > .container .navbar-expand-toggle, .navbar > .container-fluid .navbar-expand-toggle {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 0px;
+    float: left;
+    -moz-transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    opacity: 0.75;
+}
+
+.navbar > .container .navbar-expand-toggle .icon, .navbar > .container-fluid .navbar-expand-toggle .icon {
+    font-size: 1.4em;
+}
+
+.navbar > .container .navbar-right-expand-toggle, .navbar > .container-fluid .navbar-right-expand-toggle {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 0px;
+    position: absolute;
+    right: 0;
+    -moz-transition: all 0.25s linear;
+    -webkit-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+    opacity: 0.75;
+}
+
+.navbar > .container .navbar-right-expand-toggle .icon, .navbar > .container-fluid .navbar-right-expand-toggle .icon {
+    font-size: 1.4em;
+}
+
+/* Location/Breadcrumb */
+.navbar .navbar-breadcrumb {
+    margin-left: 0px;
+    background-color: transparent;
+    padding: 0px;
+    float: left;
+}
+
+.navbar .navbar-breadcrumb > li {
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+.navbar .navbar-nav > li > a {
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 20px 0px 20px;
+}
+
+/* Nav Drop Global settings */
+.navbar .dropdown-menu {
+    padding: 0;
+    border: 0;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    animation-duration: 0.4s;
+    -webkit-animation-duration: 0.4s;
+    z-index: -1;
+    position: absolute;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-bottom: 0;
+}
+
+.breadcrumb > li + li:before {
+    font-family: FontAwesome;
+    content: '\f105';
+    margin-right: 3px;
+}
+
+
+/* small screen */
+
+@media (max-width: 768px) {
+    .navbar {
+        padding-left: 0;
+    }
+    .navbar .navbar-header {
+        width: auto;
+        display: block;
+    }
+    .navbar .navbar-nav {
+        width: auto;
+        margin: 0;
+    }
+    .navbar .navbar-nav > li {
+        display: inline-block;
+    }
+    .navbar .navbar-right {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        height: 100%;
+        width: 100%;
+        -moz-transition: all 0.25s linear;
+        -webkit-transition: all 0.25s linear;
+        transition: all 0.25s linear;
+    }
+    .navbar .navbar-right .open .dropdown-menu {
+        position: absolute;
+    }
+    .navbar .navbar-right.expanded {
+        right: 0;
+    }
+    .app-container .navbar-top {
+        min-width: 300px;
+    }
+    .app-container .content-container .side-menu {
+        margin-left: -250px;
+        width: 0px;
+    }
+    .app-container .content-container .side-body {
+        margin-left: 10px;
+    }
+    .app-container.expanded .navbar-top {
+        min-width: 480px;
+        padding-left: 0px;
+    }
+    .app-container.expanded .side-menu {
+        margin-left: 0px;
+        width: 250px;
+    }
+    .app-container.expanded .side-body {
+        margin-left: 10px;
+    }
+    .app-container .app-footer .wrapper, .app-container.expanded .app-footer .wrapper {
+        padding-left: 25px;
+    }
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .featurette-heading {
+        font-size: 50px;
+    }
+    
+        .navbar .dropdown.profile .dropdown-menu {
+    background-color: white;
+}
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .dropdown-menu {
+    background-color: white;
+}
+}
+

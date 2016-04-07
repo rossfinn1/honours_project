@@ -1,0 +1,150 @@
+/*	 Global Settings
+/* -------------------------------------------------------------------------------- */
+
+html {
+    height: 100%;
+}
+
+body {
+    padding-top: 0px;
+    height: 100%;
+    position: relative;
+    font-size: 13px;
+    background: #F7FBFE;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    outline: none;
+}
+
+
+.row.no-margin-bottom > [class*="col-"] {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/*	 Misc
+/* -------------------------------------------------------------------------------- */
+
+.bypostauthor {}
+
+.divider1 {
+    clear: both;
+    float: none;
+}
+
+.margtop30 {
+    margin-top: 30px;
+}
+
+.margbot30 {
+    margin-bottom: 30px;
+}
+
+.margleft {
+    margin-left: 70px;
+}
+
+.margright {
+    margin-right: 15px;
+}
+
+.padtop150 {
+    padding-top: 150px;
+}
+
+.padtop90 {
+    padding-top: 90px;
+}
+
+.padtop80 {
+    padding-top: 80px;
+}
+
+.padtop70 {
+    padding-top: 70px;
+}
+
+.padtop60 {
+    padding-top: 60px;
+}
+
+.padtop50 {
+    padding-top: 50px;
+}
+
+.padtop40 {
+    padding-top: 40px;
+}
+
+.padtop30 {
+    padding-top: 30px;
+}
+
+.padtop20 {
+    padding-top: 20px;
+}
+
+.padtop10 {
+    padding-top: 10px;
+}
+
+.padtop0 {
+    padding-top: 0px;
+}
+
+.padbot150 {
+    padding-bottom: 90px;
+}
+
+.padbot90 {
+    padding-bottom: 90px;
+}
+
+.padbot60 {
+    padding-bottom: 60px;
+}
+
+.padbot50 {
+    padding-bottom: 50px;
+}
+
+.padbot40 {
+    padding-bottom: 40px;
+}
+
+.padbot30 {
+    padding-bottom: 30px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.padbot20 {
+    padding-bottom: 20px;
+}
+
+.padbot10 {
+    padding-bottom: 10px;
+}
+
+.padbot0 {
+    padding-bottom: 0px;
+}
+
+.color {
+    color: #25c5ed;
+}
+
+.white {
+    color: #fff;
+}
+

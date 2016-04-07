@@ -1,0 +1,83 @@
+/*	 Typography
+/* -------------------------------------------------------------------------------- */
+
+body {
+    font-family: 'Raleway';
+}
+
+.navbar .dropdown.profile .dropdown-menu .profile-info {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar .navbar-breadcrumb > li {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar .navbar-nav > li > a {
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar .dropdown-menu .title {
+    font-family: 'Raleway', sans-serif;
+}
+
+.app-container .content-container .side-menu .navbar-header .navbar-brand {
+    font-family: 'Lato', sans-serif;
+}
+
+.app-container .content-container .side-menu .navbar-nav li a {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 strong {
+    font-weight: 900;
+}
+
+h2 {
+    line-height: 20px;
+    margin: 0;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h4 {}
+
+h5 {
+    font-weight: 700;
+    line-height: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: 700;
+}
+
+p.intro {
+    font-size: 16px;
+    margin: 12px 0 0;
+    line-height: 24px;
+}
+
+a {
+    color: #25c5ed;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #25c5ed;
+}
+
+a:focus, input:focus, button:focus, .btn:focus, a:active, input:active, button:active, .btn:active {}
+
+a:focus, input:focus, button:focus, .btn:focus, a:active, input:active, button:active, .btn:active, a:hover, input:hover, button:hover, .btn:hover {
+    outline: 0;
+    box-shadow: none;
+    outline: none;
+}

@@ -1,0 +1,32 @@
+/*	 Profile / Register / Login Drodowns
+/* -------------------------------------------------------------------------------- */
+
+.navbar .dropdown.profile .dropdown-menu {
+    min-width: 305px;
+    text-align: center;
+    border-top: 3px solid #25c5ed;
+    left: auto;
+    right: 0;
+}
+
+.navbar .dropdown.profile .dropdown-menu li.profile-img {
+    padding: 0px;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.navbar .dropdown.profile .dropdown-menu li.profile-img img.profile-img {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    border: 0;
+}
+
+.navbar .dropdown.profile .dropdown-menu .profile-info {
+    padding: 15px;
+}
+
+.navbar .dropdown.profile .dropdown-menu .profile-info .username {
+    font-size: 1.8em;
+}
+
