@@ -1,0 +1,142 @@
+/*	 My Account/* -------------------------------------------------------------------------------- */
+
+.templatemyaccount .shoppingcartarea {
+    border: 1px solid #eaeaea;
+    padding: 25px;
+}
+
+.templatemyaccount .shoppingcartarea ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.templatemyaccount .shoppingcartarea .edd_subtotal {
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.templatemyaccount .shoppingcartarea .edd_checkout a {
+    background-color: #444;
+    color: #fff;
+    padding: 7px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.templatemyaccount .shoppingcartarea .edd_checkout a:hover {
+    background-color: #25c5ed;
+    color: #fff;
+    text-decoration: none;
+}
+
+.templatemyaccount .shoppingcartarea .edd_checkout a:before {
+    content: "\f090";
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+
+.templatemyaccount .shoppingcartarea li.edd-cart-item {
+    border-bottom: 1px dotted #eee;
+    padding: 10px 0;
+    list-style: square;
+    list-style-position: inside;
+    line-height: 150%;
+}
+
+.templatemyaccount .shoppingcartarea .edd-cart-number-of-items {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-style: normal;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.templatemyaccount span.smalltitle {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+}
+
+.templatemyaccount .button.logout {
+    margin-top: 30px;
+    display: block;
+    background-color: gold;
+    border: 0;
+    color: #fff;
+    padding: 15px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.templatemyaccount .button.logout:hover {
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.templatemyaccount fieldset {
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 25px;
+}
+
+.templatemyaccount form#edd_login_form fieldset legend {
+    margin-top: -39px;
+    background: #fff;
+    border-bottom: 0;
+    padding: 0 20px;
+    width: auto;
+    font-size: 17px;
+}
+
+#edd_register_form legend {
+    border: 0;
+    padding: 0 20px;
+    margin-bottom: 0;
+    width: auto;
+    font-size: 17px;
+}
+
+.templatemyaccount form#edd_login_form fieldset {
+    min-height: 371px;
+}
+
+.templatemyaccount span.or {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 700;
+    color: #333;
+    margin-left: 1.3%;
+    float: left;
+}
+
+
+.templatemyaccount p.edd-lost-password a {
+    padding: 10px;
+    background: #f9f9f9;
+    color: #333;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.templatemyaccount .wraplogin {
+    width: 48%;
+    float: left;
+}
+
+.templatemyaccount .wrapregister {
+    width: 48%;
+    float: right;
+}
+
+
+/* -------------------------------------------------------------------------------- */

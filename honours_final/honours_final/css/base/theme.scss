@@ -1,0 +1,88 @@
+/*	 Theme
+/* -------------------------------------------------------------------------------- */
+.flat-blue a {
+    color: #202020;;
+}
+
+.flat-blue a:hover {
+    color: #25c5ed;
+}
+/* drop-downs */
+.flat-blue .navbar > .container-fluid, .flat-blue .navbar.navbar-default > .container-fluid {
+    background-color: #FFF;
+}
+
+/*brand */
+.flat-blue .navbar .navbar-header .navbar-brand, .flat-blue .navbar.navbar-default .navbar-header .navbar-brand {
+    color: #fff;
+}
+
+/* side-bar hovers */
+.flat-blue .navbar .navbar-nav > li:hover > a, .flat-blue .navbar.navbar-default .navbar-nav > li:hover > a {
+    color: #25c5ed;
+     transition: 0.40ms ease-in;
+}
+
+/* Icon box */
+.flat-blue .side-menu .navbar-header {
+    background-color: #25c5ed;
+    margin-bottom: 4px;
+}
+
+/* dropdown background */
+.flat-blue .side-menu .navbar li.dropdown {
+    background-color: transparent;
+}
+
+.flat-blue .side-menu .navbar li:hover > a {
+    background-color: #2d2d2d;
+}
+
+/* dropdown background bottom portion */
+.flat-blue .side-menu.sidebar-inverse {
+    background-color: #202020;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+/* dropdown background top portion */
+.flat-blue .side-menu.sidebar-inverse .navbar {
+    background-color: #202020;
+    border-bottom: 0px;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/* sidebar text color */
+.flat-blue .side-menu.sidebar-inverse .navbar li > a {
+    color: #FFF;
+    border-bottom: solid 1px #2d2d2d;
+    border-top-color: #25c5ed;
+}
+
+/* side bar active */
+.flat-blue .side-menu.sidebar-inverse .navbar li.active > a {
+    color: #fff;
+    border-left: 3px solid #25c5ed;
+}
+
+.flat-blue .side-menu.sidebar-inverse .navbar li.active > a .icon {
+    margin-left: -3px;
+}
+
+@media (max-width: 768px) {
+    .flat-blue .navbar.navbar-default .navbar-nav > li {
+        border-left: 0;
+    }
+    .flat-blue .navbar.navbar-default .navbar-right {
+        background-color: #FFF;
+    }
+    .flat-blue .navbar.navbar-inverse .navbar-nav > li {
+        border-left: 0;
+    }
+    .flat-blue .navbar.navbar-inverse .navbar-right {
+        background-color: #202020;;
+    }
+    
+}
+

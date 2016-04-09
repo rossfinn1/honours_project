@@ -1,0 +1,262 @@
+/*	 Products
+/* -------------------------------------------------------------------------------- */
+
+.wowitemboxlist {
+    overflow: visible !important;
+}
+
+.wowitembox {
+    padding: 0 15px 30px 15px;
+    overflow: hidden;
+}
+
+#homepagetemplate .wowitembox {
+    width: 40%;
+}
+
+.wowitemboxinner {
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -kthtml-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    width: 100%;
+    position: relative;
+    background: #fff;
+    border-radius: 0px;
+    overflow: hidden;
+    -webkit-box-shadow: 4px 4px 11px 0px rgba(50, 50, 50, 0.19);
+-moz-box-shadow:    4px 4px 11px 0px rgba(50, 50, 50, 0.19);
+box-shadow:         4px 4px 11px 0px rgba(50, 50, 50, 0.19);
+}
+
+.wowitemboxinner h2 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.wowitemboxinner .notesarea {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+.wowitemboxinner .notesarea .notesbottom {
+    font-size: 13px;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.wowitemboxinner .edd-submit.button {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    color: #444;
+    font-style: italic;
+    margin-top: -3px;
+}
+
+.templateshop .wowitemboxinner .edd-submit.button {
+    font-size: 0.9em;
+}
+
+.wowitemboxinner .edd-submit.button:hover {
+    color: #25c5ed;
+}
+
+.wowitemboxinner .description {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wowitemboxinner .description p {
+    margin: 0px;
+    font-family: 'Lato';
+}
+
+span.price, span.cart {
+    color: #25c5ed;
+    font-style: italic;
+    display: block;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    text-transform: uppercase;
+}
+
+.price {
+    color: #25c5ed;
+    font-family: 'Lato Bold', sans-serif;
+    }
+
+.wowitemboxinner .edd_download_purchase_form .edd_price_options {
+    margin-bottom: 0;
+}
+
+.wowitemboxinner:hover span.price, .wowitemboxinner:hover span.cart {
+    color: #25c5ed;
+    display: block;
+    text-transform: uppercase;
+}
+
+.wowitemboxinner select {
+    display: none;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+/* -------------------------------------------------------------------------------- */
+
+
+/*	 Shop Product Image Hover/* -------------------------------------------------------------------------------- */
+
+.wowitemboxinner .imagearea {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin-bottom: -1px;
+}
+
+.wowitemboxinner .imagearea:hover .caption {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.wowitemboxinner .imagearea:hover img {
+    opacity: 1;
+    transform: scale(1.15, 1.15);
+    -webkit-transform: scale(1.15, 1.15);
+    -moz-transform: scale(1.15, 1.15);
+    -ms-transform: scale(1.15, 1.15);
+    -o-transform: scale(1.15, 1.15);
+    width: 100%;
+    height: auto;
+}
+
+.wowitemboxinner .imagearea img {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    z-index: 4;
+    width: 100%;
+    height: auto;
+}
+
+.wowitemboxinner .imagearea .caption {
+    cursor: pointer;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.45s ease-in-out;
+    -moz-transition: all 0.45s ease-in-out;
+    -o-transition: all 0.45s ease-in-out;
+    -ms-transition: all 0.45s ease-in-out;
+    transition: all 0.45s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+.wowitemboxinner .imagearea img {
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    width: 100%;
+    height: auto;
+}
+
+.wowitemboxinner .imagearea .blur {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    position: absolute;
+}
+
+.wowitemboxinner .imagearea .caption-text h1 {
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.wowitemboxinner .imagearea .caption-text {
+    z-index: 10;
+    color: #fff;
+    position: absolute;
+    text-align: center;
+    top: 37%;
+    width: 100%;
+    display: block;
+    height: auto;
+    font-size: 13px;
+}
+
+.wowitemboxinner .imagearea .caption-text a {
+    color: #fff;
+    border: 2px solid;
+    padding: 10px 12px;
+    display: inline-block;
+    min-width: 120px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.wowitemboxinner .buy-now i {
+    color: #777;
+}
+
+.wowitemboxinner .buy-now {
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.wowitemboxinner a.edd-add-to-cart .edd-add-to-cart-label:before {
+    font-style: normal;
+    font-family: FontAwesome;
+    content: "\f217";
+    margin-right: 5px;
+}
+
+.wowitemboxinner a.edd_go_to_checkout:before {
+    font-style: normal;
+    content: "\f090";
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+
+/* PRODUCTS */
+.app-container .side-body {
+    margin-right: 15px;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+}
+
+.app-container.expanded .side-body {
+    margin-left: 250px;
+}
