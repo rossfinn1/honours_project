@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Simcommerce - Account</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+    crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/libs/animate.min.css">
+    <link rel='stylesheet' href="style.css" type='text/css' media='all' />
+
+    <!-- CSS Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/themes/theme.css">
+</head>
+
+<!-- TOP NAVIGATION
+		================================================== -->
+
+<body class="flat-blue">
+    <div class="app-container">
+        <div class="row content-container">
+            <nav class="navbar navbar-default navbar-fixed-top navbar-top">
+                <div class="container-fluid">
+
+                    <!--SECTION HEADER-->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-expand-toggle">
+                            <i class="fa fa-bars icon"></i>
+                        </button>
+                        <ol class="breadcrumb navbar-breadcrumb">
+                            <li class="active">Account</li>
+                        </ol>
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                            <i class="fa fa-th icon"></i>
+                        </button>
+                    </div>
+                    <!--SECTION HEADER ENDS-->
+
+                    <!--CART DROPDOWN -->
+                    <ul class="nav navbar-nav navbar-right ">
+                        <button type="button" class="navbar-right-expand-toggle pull-right visible-xs">
+                            <i class="fa fa-times icon"></i>
+                        </button>
+                        <li class="dropdown dropdown profile">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> <span class="glyphicon glyphicon-shopping-cart"></span> 7 - Items<span class="caret"></span></a>
+                            <ul class="dropdown-menu dropdown-cart dropdown-menu animated fadeInDown" role="menu">
+                                <li>
+                                    <span class="item">
+                    <span class="item-left">
+                        <img src="http://lorempixel.com/50/50/" alt="" />
+                        <span class="item-info">
+                            <span>HP 32" Monitor</span>
+                                    </span>
+                                    </span>
+                                    <span class="item-right">
+                        <i class="fa fa-times-circle-o fa-2x"></i></span>
+                                    </span>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <span class="item">
+                    <span class="item-left">
+                        <img src="http://lorempixel.com/50/50/" alt="" />
+                        <span class="item-info">
+                            <span>Asus GTX 980</span>
+                                    </span>
+                                    </span>
+                                    <span class="item-right"><i class="fa fa-times-circle-o fa-2x"></i></span>
+                                    </span>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <input id="edd_login_submit" type="submit" class="edd_submit" value="View Cart" />
+                                </li>
+
+                            </ul>
+                        </li>
+                        <!--CART DROPDOWN ENDS -->
+
+                        <!--LOGIN DROPDOWN BEGINS -->
+                        <li class="dropdown profile">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Login <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated fadeInDown">
+                                <div class="container padtop40 padbot50">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="wraplogin">
+                                                <form id="edd_login_form" class="edd_form" action="#" method="post">
+                                                    <fieldset>
+                                                        <legend>Log into Your Account</legend>
+                                                        <p>
+                                                            <label>Username</label>
+                                                            <input name="edd_user_login" id="edd_user_login" class="required edd-input" type="text" title="Username" />
+                                                        </p>
+                                                        <p>
+                                                            <label>Password</label>
+                                                            <input name="edd_user_pass" id="edd_user_pass" class="password required edd-input" type="password" />
+                                                        </p>
+                                                        <p>
+                                                            <input id="edd_login_submit" type="submit" class="edd_submit" value="Log In" />
+                                                        </p>
+                                                        <li class="divider"></li>
+                                                        <p class="edd-lost-password">
+                                                            <a href="#" title="Lost Password">Lost Password? </a>
+                                                        </p>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </ul>
+                        </li>
+                        <!--LOGIN DROPDOWN ENDS-->
+
+                        <!--REGISTER DROPDOWN BEGINS -->
+                        <li class="dropdown profile">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Register <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated fadeInDown">
+                                <div class="container padtop40 padbot50">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="wrapregister">
+                                                <form id="edd_register_form" class="edd_form" action="#" method="post">
+                                                    <fieldset>
+                                                        <legend>Register New Account</legend>
+                                                        <p>
+                                                            <label>Username</label>
+                                                            <input id="edd-user-login" class="required edd-input" type="text" name="edd_user_login" title="Username" />
+                                                        </p>
+                                                        <p>
+                                                            <label>Email</label>
+                                                            <input id="edd-user-email" class="required edd-input" type="email" name="edd_user_email" title="Email Address" />
+                                                        </p>
+                                                        <p>
+                                                            <label>Password</label>
+                                                            <input id="edd-user-pass" class="password required edd-input" type="password" name="edd_user_pass" />
+                                                        </p>
+                                                        <p>
+                                                            <label>Confirm Password</label>
+                                                            <input id="edd-user-pass2" class="password required edd-input" type="password" name="edd_user_pass2" />
+                                                        </p>
+                                                        <p>
+                                                            <input class="button" name="edd_register_submit" type="submit" value="Register" />
+                                                        </p>
+                                                    </fieldset>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                            </ul>
+                        </li>
+                        <!--REGISTER DROPDOWN ENDS-->
+
+                        <!--PROFILE DROPDOWN-->
+                        <li class="dropdown profile">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ROSS FINN <span class="caret"></span></a>
+                            <ul class="dropdown-menu animated fadeInDown">
+                                <li>
+                                    <div class="profile-info">
+                                        <h4 class="username">Ross Finn</h4>
+                                        <p>rossfinn@gmail.com</p>
+                                        <div class="btn-group margin-bottom-2x" role="group">
+                                            <button type="button" class="btn btn-default"><i class="fa fa-user"></i> Orders</button>
+                                            <button type="button" class="btn btn-default"><i class="fa fa-sign-out"></i> Logout</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <!--PROFILE DROPDOWN ENDS-->
+                    </ul>
+                    </div>
+            </nav>
+
+            <!-- SIDE NAVIGATION / APP CONTAINER
+		================================================== -->
+            <div class="side-menu sidebar-inverse">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="side-menu-container">
+                        <!--logo -->
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="#">
+                                <div class="icon fa fa-paper-plane"></div>
+                                <div class="title">Simcommerce</div>
+                            </a>
+                            <!-- toggle button -->
+                            <button type="button" class="navbar-expand-toggle pull-right visible-xs">
+                                <i class="fa fa-times icon"></i>
+                            </button>
+                        </div>
+
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="index.html">
+                                    <span class="icon fa fa-certificate"></span><span class="title">Checkout</span>
+                                </a>
+                            </li>
+
+                            <!-- Dropdown One -->
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="#dropdown-element">
+                                    <span class="icon fa fa-hdd-o"></span><span class="title">Components & Storage</span>
+                                </a>
+                                <!-- level 1 -->
+                                <div id="dropdown-element" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="ui-kits/theming.html"> <i class="fa fa-dot-circle-o margright"></i>Cases</a>
+                                            </li>
+                                            <li>
+                                                <a href="ui-kits/grid.html"> <i class="fa fa-dot-circle-o margright"></i> Graphics & I/O</a>
+                                            </li>
+                                            <li>
+                                                <a href="ui-kits/button.html"> <i class="fa fa-dot-circle-o margright"></i> Storage</a>
+                                            </li>
+                                            <li><a href="ui-kits/card.html"><i class="fa fa-dot-circle-o margright"></i>Memory</a>
+                                            </li>
+                                            <li><a href="ui-kits/list.html"><i class="fa fa-dot-circle-o margright"></i>Processors</a>
+                                            </li>
+                                            <li><a href="ui-kits/list.html"><i class="fa fa-dot-circle-o margright"></i>Motherboards</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Dropdown Two -->
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="#dropdown-table">
+                                    <span class="icon fa fa-wifi"></span><span class="title">Networking</span>
+                                </a>
+                                <!-- level 1 -->
+                                <div id="dropdown-table" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="table/table.html"> <i class="fa fa-dot-circle-o margright"></i>Network Devices</a>
+                                            </li>
+                                            <li>
+                                                <a href="table/datatable.html"> <i class="fa fa-dot-circle-o margright"></i>Routers & Switches</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Dropdown Three -->
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="#dropdown-form">
+                                    <span class="icon fa fa-volume-up"></span><span class="title">Sound & Vision</span>
+                                </a>
+                                <!--  level 1 -->
+                                <div id="dropdown-form" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="form/ui-kits.html"> <i class="fa fa-dot-circle-o margright"></i>Telephony</a>
+                                            </li>
+                                            <li>
+                                                <a href="form/ui-kits.html"> <i class="fa fa-dot-circle-o margright"></i>Monitoring</a>
+                                            </li>
+                                            <li>
+                                                <a href="form/ui-kits.html"> <i class="fa fa-dot-circle-o margright"></i>Cameras</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Dropdown Four -->
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="#component-example">
+                                    <span class="icon fa fa-print"></span><span class="title">Print & Office</span>
+                                </a>
+                                <!-- level 1 -->
+                                <div id="component-example" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="components/pricing-table.html"> <i class="fa fa-dot-circle-o margright"></i>Presentation</a>
+                                            </li>
+                                            <li>
+                                                <a href="components/chartjs.html"> <i class="fa fa-dot-circle-o margright"></i>Printers & Scanners</a>
+                                            </li>
+                                            <li>
+                                                <a href="components/chartjs.html"> <i class="fa fa-dot-circle-o margright"></i>Office Products</a>
+                                            </li>
+                                            <li>
+                                                <a href="components/chartjs.html"> <i class="fa fa-dot-circle-o margright"></i>Conferencing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Dropdown Five -->
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="#dropdown-example">
+                                    <span class="icon fa fa-usb"></span><span class="title">Cables & Power</span>
+                                </a>
+                                <!-- level 1 -->
+                                <div id="dropdown-example" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="pages/login.html"> <i class="fa fa-dot-circle-o margright"></i>Cables</a>
+                                            </li>
+                                            <li>
+                                                <a href="pages/index.html"> <i class="fa fa-dot-circle-o margright"></i>Power</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Dropdown Six -->
+                            <li class="panel panel-default dropdown">
+                                <a data-toggle="collapse" href="#dropdown-icon">
+                                    <span class="icon fa fa-desktop"></span><span class="title">Computing</span>
+                                </a>
+                                <!-- Level 1 -->
+                                <div id="dropdown-icon" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="icons/glyphicons.html"> <i class="fa fa-dot-circle-o margright"></i>Desktops</a>
+                                            </li>
+                                            <li>
+                                                <a href="icons/font-awesome.html"> <i class="fa fa-dot-circle-o margright"></i>Monitors</a>
+                                            </li>
+                                            <li>
+                                                <a href="icons/font-awesome.html"> <i class="fa fa-dot-circle-o margright"></i>Servers</a>
+                                            </li>
+                                            <li>
+                                                <a href="icons/font-awesome.html"> <i class="fa fa-dot-circle-o margright"></i>Software</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Dropdown Seven -->
+                            <li>
+                                <a href="license.html">
+                                    <span class="icon fa fa-credit-card"></span><span class="title">Checkout</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="license.html">
+                                    <span class="icon fa fa-book"></span><span class="title">Terms & Conditions</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="license.html">
+                                    <span class="icon fa fa-sitemap"></span><span class="title">Terms & Conditions</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="license.html">
+                                    <span class="icon fa fa-info"></span><span class="title">Help</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="license.html">
+                                    <span class="icon fa fa-question"></span><span class="title">Tutorial</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </nav>
+            </div>
+
+            <!-- PAGE CONTENT / PRODUCT VIEW
+		================================================== -->
+            <div class="shoppage container-fluid">
+                <!-- TITLE BEGINS -->
+                <div class="headerimage side-body" style="background-image: url(http://www.themepush.com/demo-kailo/wp-content/uploads/sites/6/2015/03/header.jpg);"></div>
+                <!-- TITLE ENDS -->
+
+                <!-- MAIN CONTENT BEGINS -->
+                <div class="row">
+                    <div class=" wowitemboxlist side-body padbot30">
+                        <!-- Breadcrumb and Sorting -->
+                        <div class="container-fluid ">
+                            <div class="col-md-12">
+                                <span class="pagesit fleft">Featured</span>
+                                <div class="sortitemsarea fright">
+                                    <form method="GET" action="#" class="wowsortitems">
+                                        <select name="data" id="data" onchange='this.form.submit()'>
+                                            <option value="1">Sort by newest</option>
+                                            <option value="2">Sort by price: low to high</option>
+                                            <option value="3">Sort by price: high to low</option>
+                                            <option value="4">Sort by popularity</option>
+                                            <option value="5">Sort by oldest</option>
+                                            <option value="6">Sort by comments</option>
+                                            <option value="7">Sort alphabetically</option>
+                                        </select>
+                                        <noscript>
+                                            <input type="submit" value="Submit">
+                                        </noscript>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <!-- Account Area -->
+                                <div class="container padtop40 padbot50">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <span class="smalltitle">Purchase History</span>
+                                            <table id="edd_user_history">
+                                                <thead>
+                                                    <tr class="edd_purchase_row">
+                                                        <th class="edd_purchase_id">
+                                                            ID
+                                                        </th>
+                                                        <th class="edd_purchase_date">
+                                                            Date
+                                                        </th>
+                                                        <th class="edd_purchase_amount">
+                                                            Amount
+                                                        </th>
+                                                        <th class="edd_purchase_details">
+                                                            Details
+                                                        </th>
+                                                    </tr>
+                                                </thead>
+                                                <tr class="edd_purchase_row">
+                                                    <td class="edd_purchase_id">
+                                                        #147
+                                                    </td>
+                                                    <td class="edd_purchase_date">
+                                                        March 1, 2015
+                                                    </td>
+                                                    <td class="edd_purchase_amount">
+                                                        <span class="edd_purchase_amount">$27.00</span>
+                                                    </td>
+                                                    <td class="edd_purchase_details">
+                                                        <a href="purchaseconfirmation.html">View Details and Downloads</a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <div id="edd_purchase_history_pagination" class="edd_pagination navigation">
+                                            </div>
+                                            <div style="margin-top:40px;display:block;">
+                                                <span class="smalltitle">Shopping Cart</span>
+                                                <div class="shoppingcartarea">
+                                                    <p class="edd-cart-number-of-items" style="display:none;">
+                                                        Number of items in cart: <span class="edd-cart-quantity">0</span>
+                                                    </p>
+                                                    <ul class="edd-cart">
+                                                        <li class="cart_item empty"><span class="edd_empty_cart">Your cart is empty.</span></li>
+                                                        <li class="cart_item edd_subtotal" style="display:none;">Subtotal: <span class='subtotal'>$0</span></li>
+                                                        <li class="cart_item edd_checkout" style="display:none;"><a href="checkout.html">Checkout</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <span class="smalltitle">Profile Editor</span>
+                                            <form id="edd_profile_editor_form" class="edd_form" action="#" method="post">
+                                                <fieldset>
+                                                    <p id="edd_profile_name_wrap">
+                                                        <label for="edd_first_name">First Name</label>
+                                                        <input name="edd_first_name" id="edd_first_name" class="text edd-input" type="text" value="" />
+                                                        <br/>
+                                                        <label for="edd_last_name">Last Name</label>
+                                                        <input name="edd_last_name" id="edd_last_name" class="text edd-input" type="text" value="" />
+                                                    </p>
+                                                    <p id="edd_profile_display_name_wrap">
+                                                        <label for="edd_display_name">Display Name</label>
+                                                        <select name="edd_display_name" id="edd_display_name" class="select edd-select">
+                                                            <option value="Nickname">Nickname</option>
+                                                        </select>
+                                                    </p>
+                                                    <p>
+                                                        <label for="edd_email">Email Address</label>
+                                                        <input name="edd_email" id="edd_email" class="text edd-input required" type="email" value="wowthemesnet@gmail.com" />
+                                                    </p>
+
+                                                    <p id="edd_profile_billing_address_wrap">
+                                                        <label for="edd_address_line1">Line 1</label>
+                                                        <input name="edd_address_line1" id="edd_address_line1" class="text edd-input" type="text" value="" />
+                                                        <br/>
+                                                        <label for="edd_address_line2">Line 2</label>
+                                                        <input name="edd_address_line2" id="edd_address_line2" class="text edd-input" type="text" value="" />
+                                                        <br/>
+                                                    </p>
+
+                                                    <p id="edd_profile_password_wrap">
+                                                        <label>New Password</label>
+                                                        <input name="edd_new_user_pass1" id="edd_new_user_pass1" class="password edd-input" type="password" />
+                                                        <br/>
+                                                        <label>Re-enter Password</label>
+                                                        <input name="edd_new_user_pass2" id="edd_new_user_pass2" class="password edd-input" type="password" />
+                                                    </p>
+                                                    <p class="edd_password_change_notice">
+                                                        Please note after changing your password, you must log back in.
+                                                    </p>
+                                                    <p id="edd_profile_submit_wrap">
+                                                        <input name="edd_profile_editor_submit" id="edd_profile_editor_submit" type="submit" class="edd_submit" value="Save Changes"
+                                                        />
+                                                    </p>
+                                                </fieldset>
+                                            </form>
+                                            <!-- #edd_profile_editor_form -->
+                                            <a class="button logout" href="#" title="Logout"><i class="fa fa-sign-out"></i> Log Out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- MAIN CONTENT ENDS -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- .wowitembox-->
+            </div>
+            </div>
+            </div>
+        </div>
+        <!-- MAIN CONTENT ENDS -->
+    </div>
+    </div>
+    </div>
+
+    <!-- FOOTER
+		================================================== -->
+    <footer class="themefooter section side-body">
+        <div class="container-fluid side-body margleft">
+            <div class="section-inner row">
+                <!-- /footer-a -->
+                <div class="column column-1 col-md-4 side-body rightbd">
+                    <div class="widgets">
+                        <div class="widget widget_text">
+                            <div class="widget-content">
+                                <h3 class="widget-title">About  Simcommerce</h3>
+                                <div class="textwidget">
+                                    Simcommerce is a simple yet effective ecommerce solution that is designed to cut out all of the uneccessary fluff from traditional
+                                    business to business sales sites. Simply search for your product and order!
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /footer-b -->
+                <div class="column column-1 col-md-4 rightbd">
+                    <div class="widgets">
+                        <div class="widget widget_wysija">
+                            <div class="widget-content">
+                                <h3 class="widget-title">Subscribe to our Newsletter</h3>
+                                <div class="widget_wysija_cont">
+                                    <form class="widget_wysija">
+                                        Subscribe to our newsletter and join our 1374 subscribers.
+                                        <p class="wysija-paragraph">
+                                            <label>Email <span class="wysija-required">*</span></label>
+                                            <input type="text" name="" class="wysija-input validate[required,custom[email]]" title="Email" value="" />
+                                        </p>
+                                        <input class="wysija-submit wysija-submit-field" type="submit" value="Subscribe!" />
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /footer-c -->
+                <div class="column column-1 col-md-4">
+                    <div class="widgets">
+                        <div class="widget widget_edd_categories_tags_widget">
+                            <div class="widget-content">
+                                <h3 class="widget-title">Information</h3>
+                                <ul class="edd-taxonomy-widget">
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                    <li><a href="#">Site Map</a></li>
+                                    <li><a href="#">Information</a></li>
+                                    <li><a href="#">Help</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear">
+                </div>
+            </div>
+        </div>
+        <!-- /copyright -->
+        <div class="sectioncredits">
+            <div class="container-fluid margleft text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="credits-left fleft">
+						2015 &copy; All Rights Reserved, WowThemes.net </span>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT
+		================================================== -->
+    <!-- Libs -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+    <!-- Custom -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+
+</html>
