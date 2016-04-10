@@ -6,7 +6,9 @@ $db_password = '';
 $db_name = 'testdb';
 $db_host = '127.0.0.1';
 
-$shipping_cost      = 1.50; //shipping cost
+$shipping_cost      = 1.50;
+$vat     = 5.50;
+$tax      = 3.00; //shipping cost
 $taxes              = array( //List your Taxes percent here.
                             'VAT' => 12, 
                             'Service Tax' => 5

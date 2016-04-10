@@ -5,7 +5,7 @@
             <div class="side-menu-container">
                 <!--logo -->
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="index.php">
                         <div class="icon fa fa-paper-plane"></div>
                         <div class="title">Simcommerce</div>
                     </a>
