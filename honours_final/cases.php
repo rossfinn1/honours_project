@@ -1,3 +1,10 @@
+<!-- Login/register/logout Functions -->
+<?php include("inc/layouts/sessions/register.php"); ?>
+
+<!-- Includes Syles top Nav & Side Nav -->
+<?php $pageTitle = "Welcome"; include("inc/layouts/header.php"); include("inc/layouts/top_nav.php"); include("inc/layouts/side_nav.php"); ?>
+
+<!-- Includes Landing/Featured Content -->
  <!-- PAGE CONTENT / PRODUCT VIEW
             ================================================== -->
             <div class="shoppage container-fluid">
@@ -34,7 +41,7 @@
 <?php
 $current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
 
-$results = $mysqli->query("SELECT id, product_code, product_name, product_desc, product_img_name, price FROM products ORDER BY id ASC");
+$results = $mysqli->query("SELECT id, product_code, product_name, product_desc, product_img_name, price FROM cases ORDER BY id ASC");
 if($results){ 
 $products_item = '<div class="loop">';
 //fetch results set as object and output HTML
@@ -113,3 +120,6 @@ echo $products_item;
                 <!-- MAIN CONTENT ENDS -->
             </div>
         </div>
+
+<!-- Includes Footer and Scripts -->
+<?php include("inc/layouts/footer.php"); include("inc/layouts/scripts.php"); ?>

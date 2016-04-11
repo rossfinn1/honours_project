@@ -39,107 +39,88 @@
                                 <form id="edd_checkout_cart_form" method="post">
                                     <div id="edd_checkout_cart_wrap">
                                         <table id="edd_checkout_cart" class="ajaxed">
-                                            <thead>
-                                                <tr class="edd_cart_header_row">
-                                                    <th class="edd_cart_item_name">
-                                                        Item Name
-                                                    </th>
-                                                    <th class="edd_cart_item_price">
-                                                        Item Price
-                                                    </th>
-                                                    <th class="edd_cart_actions">
-                                                        Actions
-                                                    </th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
+                                            
 
-                                                <!-- cart item 1 -->
-                                                <tr class="edd_cart_item">
-                                                    <td class="edd_cart_item_name">
-                                                        <div class="edd_cart_item_image">
-                                                            <img width="25" height="25" src="http://www.themepush.com/demo-kailo/wp-content/uploads/sites/6/edd/2015/03/172_1-150x150.jpg"
-                                                            class="attachment-25x25 wp-post-image" alt="172_1" />
-                                                        </div>
-                                                        <span class="edd_checkout_cart_item_title">Eyes Wide Shut</span>
-                                                    </td>
-                                                    <td class="edd_cart_item_price">
-                                                        $17.00
-                                                    </td>
-                                                    <td class="edd_cart_actions">
-                                                        <a class="edd_cart_remove_item_btn" href="#">Remove</a>
-                                                    </td>
-                                                </tr>
 
-                                                <!-- cart item 2 -->
-                                                <tr class="edd_cart_item">
-                                                    <td class="edd_cart_item_name">
-                                                        <div class="edd_cart_item_image">
-                                                            <img width="25" height="25" src="http://www.themepush.com/demo-kailo/wp-content/uploads/sites/6/edd/2015/03/163_1-150x150.jpg"
-                                                            class="attachment-25x25 wp-post-image" alt="163_1" />
-                                                        </div>
-                                                        <span class="edd_checkout_cart_item_title">Travel Fashion</span>
-                                                    </td>
-                                                    <td class="edd_cart_item_price">
-                                                        $19.00
-                                                    </td>
-                                                    <td class="edd_cart_actions">
-                                                        <a class="edd_cart_remove_item_btn" href="#">Remove</a>
-                                                    </td>
-                                                </tr>
 
-                                                <!-- cart item 3 -->
-                                                <tr class="edd_cart_item">
-                                                    <td class="edd_cart_item_name">
-                                                        <div class="edd_cart_item_image">
-                                                            <img width="25" height="25" src="http://www.themepush.com/demo-kailo/wp-content/uploads/sites/6/edd/2015/03/168_1-150x150.jpg"
-                                                            class="attachment-25x25 wp-post-image" alt="168_1" />
-                                                        </div>
-                                                        <span class="edd_checkout_cart_item_title">Bananas</span>
-                                                    </td>
-                                                    <td class="edd_cart_item_price">
-                                                        $6.50
-                                                    </td>
-                                                    <td class="edd_cart_actions">
-                                                        <a class="edd_cart_remove_item_btn" href="#">Remove</a>
-                                                    </td>
-                                                </tr>
 
-                                                <!-- cart item 4 -->
-                                                <tr class="edd_cart_item">
-                                                    <td class="edd_cart_item_name">
-                                                        <div class="edd_cart_item_image">
-                                                            <img width="25" height="25" src="http://www.themepush.com/demo-kailo/wp-content/uploads/sites/6/edd/2015/03/5_1-150x150.jpg"
-                                                            class="attachment-25x25 wp-post-image" alt="5_1" />
-                                                        </div>
-                                                        <span class="edd_checkout_cart_item_title">Sandy Banner</span>
-                                                    </td>
-                                                    <td class="edd_cart_item_price">
-                                                        $8.00
-                                                    </td>
-                                                    <td class="edd_cart_actions">
-                                                        <a class="edd_cart_remove_item_btn" href="#">Remove</a>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot>
-                                                <tr class="edd_cart_footer_row">
-                                                    <td>
-                                                        Total: <span class="edd_cart_amount" data-subtotal="50.5"
-                                                        data-total="50.5">$50.50</span>
-                                                    </td>
-                                                </tr>
-                                            </tfoot>
+                                        <form method="post" action="cart_update.php">
+<table id="edd_checkout_cart" class="ajaxed"  width="100%"  cellpadding="6" cellspacing="0"><thead><tr class="edd_cart_header_row"><th class="edd_cart_item_name">Quantity</th><th class="edd_cart_item_name">Name</th><th class="edd_cart_item_name">Price</th><th class="edd_cart_item_name">Total</th></tr></thead>
+  <tbody>
+    <?php
+    if(isset($_SESSION["cart_products"])) //check session var
+    {
+        $total = 0; //set initial total value
+        $b = 0; //var for zebra stripe table 
+        foreach ($_SESSION["cart_products"] as $cart_itm)
+        {
+            //set variables to use in content below
+            $product_name = $cart_itm["product_name"];
+            $product_qty = $cart_itm["product_qty"];
+            $product_price = $cart_itm["product_price"];
+            $product_code = $cart_itm["product_code"];
+            $subtotal = ($product_price * $product_qty); //calculate Price x Qty
+            
+            $bg_color = ($b++%2==1) ? 'odd' : 'even'; //class for zebra stripe 
+            echo '<tr class=" edd_cart_item '.$bg_color.'">';
+            echo '<td class="edd_cart_item_name"><input type="text" size="2" maxlength="2" name="product_qty['.$product_code.']" value="'.$product_qty.'" /></td>';
+            echo '<td class="edd_checkout_cart_item_title">'.$product_name.'</td>';
+            echo '<td class="edd_cart_item_price">'.$currency.$product_price.'</td>';
+            echo '<td class="edd_cart_remove_item_btn">'.$currency.$subtotal.'</td>';
+            $total = ($total + $subtotal); //add subtotal to total var
+        }
+        
+        $grand_total = $total + $shipping_cost + $vat + $tax; //grand total including shipping cost
+        foreach($taxes as $key => $value){ //list and calculate all taxes in array
+                $tax_amount     = round($total * ($value / 100));
+                $tax_item[$key] = $tax_amount;
+                $grand_total    = $grand_total + $tax_amount;  //add tax val to grand total
+        }
+        
+        $list_tax       = '';
+        foreach($tax_item as $key => $value){ //List all taxes
+            $list_tax .= $key. ' : '. $currency. sprintf("%01.2f", $value).'<br />';
+        }
+        $shipping_cost = ($shipping_cost)?'Shipping Cost : '.$currency. sprintf("%01.2f", $shipping_cost).'<br />':'';
+    }
+    ?>
+  </tbody>
+</table>
+<input type="hidden" name="return_url" value="<?php 
+$current_url = urlencode($url="http://".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI']);
+echo $current_url; ?>" />
+</form>
+
+
+
+
                                         </table>
                                     </div>
-                                </form>
                                 <div id="edd_checkout_form_wrap" class="edd_clearfix">
                                     <form id="edd_purchase_form" class="edd_form" action="#" method="POST">
                                         <fieldset id="edd_purchase_submit">
-                                            <p id="edd_final_total_wrap">
-                                                <strong>Purchase Total:</strong>
-                                                <span class="edd_cart_amount" data-subtotal="50.5" data-total="50.5">$50.50</span>
-                                            </p>
+
+
+
+                                <table id="edd_checkout_cart" class="ajaxed">
+                                            <thead>
+                                                <tr class="edd_cart_header_row">
+                                                    <th class="edd_cart_item_name">
+                                                        <?php echo $shipping_cost; ?>
+                                                    </th>
+                                                    <th class="edd_cart_item_price">
+                                                        VAT: £ <?php echo $vat ?>0
+                                                    </th>
+                                                    <th class="edd_cart_actions">
+                                                        Tax £<?php echo $tax; ?>.00
+                                                    </th>
+                                                    <th class="edd_cart_actions">
+                                                    Purchase Total: £<?php echo sprintf("%01.2f", $grand_total);?>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                        </table>
+
                                             <input type="submit" class="edd-submit button" id="edd-purchase-button" name="edd-purchase" value="Pay with PayPal" />
                                         </fieldset>
                                     </form>
@@ -154,9 +135,4 @@
             <!-- .wowitembox-->
         </div>
     </div>
-</div>
-</div>
 <!-- MAIN CONTENT ENDS -->
-</div>
-</div>
-</div>

@@ -153,16 +153,14 @@
         $bg_color = ($b++%2==1) ? 'odd' : 'even'; //zebra stripe
         echo '<tr class="'.$bg_color.'">';
         echo '<td>'.$product_name.'</td>';
-        echo '<td>Qty <input type="text" size="2" maxlength="2" name="product_qty['.$product_code.']" value="'.$product_qty.'" /></td>';
+        echo '<td> <input type="text" size="2" maxlength="2" name="product_qty['.$product_code.']" value="'.$product_qty.'" /></td>';
         echo '<td><input type="checkbox" name="remove_code[]" value="'.$product_code.'" /> Remove</td>';
         echo '</tr>';
-        echo '<div class="divider"></div>';
-
         $subtotal = ($product_price * $product_qty);
         $total = ($total + $subtotal);
     }
     echo '<td colspan="4">';
-    echo '<button type="submit">Delete Items</button>';
+    echo '<button type="submit class="delete">Delete Items</button>';
     echo '</td>';
     echo '</tbody>';
     echo '</table>';
@@ -175,8 +173,8 @@
 }
 ?>
 <li class="divider"></li>
-<li>
-    <input id="edd_login_submit" type="submit" class="edd_submit" value="Checkout" />
+<li >
+    <a href="checkout.php" id="edd_login_submit" class="edd_submit">Checkout</a>
 </li>
 
 </ul>

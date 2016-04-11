@@ -208,3 +208,16 @@ box-shadow:         0px 26px 13px 0px rgba(50, 50, 50, 0.04);
 }
 }
 
+.checkout-link {
+    background-color: #green;
+    color: #fff;
+    padding: 7px 20px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.checkout-link:hover {
+color: white;
+    background-color: #25c5ed;
+}

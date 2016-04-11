@@ -260,3 +260,21 @@ span.price, span.cart {
 .app-container.expanded .side-body {
     margin-left: 250px;
 }
+
+.field {
+     float:left;
+
+}
+
+.form1{
+     float: right;
+}
+
+.add-cart{
+    border: 0;
+    background: none;
+}
+
+.add-cart:hover { 
+    color: #25c5ed;
+}

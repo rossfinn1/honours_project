@@ -3296,6 +3296,21 @@ p.edd_error {
   border: #25c5ed 1px solid;
 }
 
+.dropdown-menu > li > a {
+  background-color: #444;
+  color: #fff;
+  padding: 7px 20px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.dropdown-menu > li > a:hover {
+  color: white;
+  background-color: #25c5ed;
+}
+
 /*	 Footer
 /* -------------------------------------------------------------------------------- */
 footer .section-inner {
@@ -3732,6 +3747,23 @@ span.price, span.cart {
   margin-left: 250px;
 }
 
+.field {
+  float: left;
+}
+
+.form1 {
+  float: right;
+}
+
+.add-cart {
+  border: 0;
+  background: none;
+}
+
+.add-cart:hover {
+  color: #25c5ed;
+}
+
 /*	 Profile / Register / Login Drodowns
 /* -------------------------------------------------------------------------------- */
 .navbar .dropdown.profile .dropdown-menu {
@@ -4140,4 +4172,18 @@ span.price, span.cart {
   .dropdown-menu {
     background-color: white;
   }
+}
+
+.checkout-link {
+  background-color: #green;
+  color: #fff;
+  padding: 7px 20px;
+  margin-top: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.checkout-link:hover {
+  color: white;
+  background-color: #25c5ed;
 }

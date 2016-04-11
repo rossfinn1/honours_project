@@ -465,3 +465,20 @@ margin-top: -4px;
 .edd_downloads_list #edd_download_pagination .page-numbers {border: 1px solid #ddd;padding: 13px 19px;margin-right: 3px;}
 .edd_downloads_list #edd_download_pagination a.page-numbers {color:inherit;}
 .edd_downloads_list #edd_download_pagination .page-numbers.current, .edd_downloads_list #edd_download_pagination .page-numbers:hover{color:#25c5ed;border:#25c5ed 1px solid;}
+
+
+
+.dropdown-menu>li>a{
+    background-color: #444;
+    color: #fff;
+    padding: 7px 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown-menu>li>a:hover {
+color: white;
+    background-color: #25c5ed;
+}
